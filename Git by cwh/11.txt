@@ -1,0 +1,24 @@
+// Git log: viewing & changing commits in git
+-> rm -rf .git    (Delete git repository)
+
+-> git clone "URL of pandas github" mypanda     (here, mypanda is the name )
+-> git log
+-> git lop -p    (info about add or delete data)
+-> git log --stat   (short summary)
+-> git log --pretty=oneline   (display all commits in each line)
+-> git log --pretty=short
+-> git log --pretty=full
+-> git log --since=2.days    (or weeks or months or years)
+-> git log --pretty=format:"%h -- %an"        (an = author name and ae = author email)
+(Google: git scm useful options for git log format)
+
+-> git commit --amend      (To make change in commit msg)
+[vim cmd - press->(i) (for insert)  then, esc:wq(Enter) "for exit"]
+
+//Unstage the file from stage area
+-> git add file.txt   (stagged the file)
+-> git restore --staged file.txt    (Unstage the file) 
+
+// Unmodify the file to the previous commit stage
+-> git checkout -- file.txt
+-> git checkout -f     (All changes lose and back to the last commit stage)

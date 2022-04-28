@@ -1,0 +1,12 @@
+Git is a Version Control System
+-> Easily recover files
+-> Who introduced an issue and When?
+-> Roll back to previously working state
+
+Git:Freatures-
+-> Snapshot Captured 
+-> Almost every operation are local 
+-> Git has integrity (SHA Checksum )
+-> Git genarally only adds data
+
+

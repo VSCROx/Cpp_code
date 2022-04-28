@@ -1,0 +1,14 @@
+// Ignore File 
+- touch error.log (Create a error.log file)
+- touch .gitignore   (Create a .gitignore file)
+- git add --a , git commit -m "added .gitignore"
+
+// To ignore all .log files
+- write in .gitignore (*.log)
+// To ignore directory 
+- write in .gitignore (dir/)
+
+// To ignore outer dir/ folder & not in other folder(dir/) folder
+- write in .gitignore (/dir/)
+// To ignore (static folder -> dir folder)
+-write in .gitignore (static/dir)

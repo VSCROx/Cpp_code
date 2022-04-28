@@ -1,0 +1,33 @@
+// Push file remotely on GitHub 
+Create New repository on GitHub
+-> git remote add origin git@github.com:CodewithHarry/GitTutorialDemo.git     
+-> git remote
+-> git remote -v   (display 2 URL)
+-> git push -u origin master        ("this will throw error as we have no permission to push file")
+
+// For Permisssion  to push 
+GitHub > Setting > SSH keys(new ssh key) > title > key[.........................]
+
+Google: ssh keys github
+-> ssh-keygen -t rsa -b 4096 -C "email"
+-> eval $ (ssh-agent -s)    (Ensure the ssh-agent is running)
+-> ssh-add ~/.ssh/id_rsa
+-> tail ~/.ssh/id_rsa.pub   
+.................................(here, is the key paste it in the block of github key section)
+
+
+// Now, Run the push command
+-> git push -u origin master
+
+// If we add new file in our repository
+-> git add .
+-> git commit -m "Added file"
+-> git push -u origin master     (File will added to GitHub)
+
+
+// Setting Alias in Git commands
+-> git config --global alias.st status
+-> git st  (works same as git status)
+
+-> git config --global alias.unstage 'restore --staged --'    (Alias for unstage the file)
+-> git unstage file.txt 

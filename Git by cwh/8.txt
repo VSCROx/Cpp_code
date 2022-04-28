@@ -1,0 +1,21 @@
+// Compare working directory & stagging area
+-> git diff
+(red color - stagging area
+green color - working directory)
+
+// Pichle Commit ko abhi ke stagging area  se compare krta h
+-> git diff --staged
+
+// Skipping the stagging area
+-> git commit -a -m "Direct commit"
+
+// Removing File
+-> git rm file.txt 
+(then run -> git commit -m"removed file")
+
+// Renaming file
+-> git mv file.txt new_file.txt
+
+// To Untracked a file 
+-> git rm --cached file.txt     (After put into .gitignore file)
+

@@ -1,0 +1,22 @@
+// L2 to L5
+Git Commands:-
+-> pwd   (present working directory)
+-> cd /C  (change directory)
+-> git config --global user.name "vs"
+-> git config --global user.email "a124@gmail.com"
+-> git config --list       (To check above result)
+-> git config user.name(or user.email)    (To check name or email)
+
+-> git status
+-> git init
+-> git add --a  (Put all the files in Staging area)
+-> git commit -m "Initial commit"     (here, 'm' means message )
+-> git log      (See all commit)
+-> git add sample.txt    (To stage sample.txt file only)
+-> git commit -m "Changed sample.txt & add better design"
+-> rm -rf .git      (Remove or Delete git repository)
+
+-> git clone "URL"     (url of github tensorflow repository)
+-> pwd  
+-> ls  (list Content)
+-> cd tensorflow/    (change directory)
